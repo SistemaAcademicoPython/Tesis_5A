@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Trabajo con formularios</title>
+</head>
+<body>
+	<h1>Primer Formulario</h1>
+	<form>
+		<div>
+			<label>Nombre<input name="nombre"></label>
+			
+		</div>
+		<div>
+			<label>Apellido<input name="apellido"></label>
+			
+		</div>
+		<div>
+			<label>
+				Dirección
+				<input name="direccion">
+			</label>
+		</div>
+		<button>Guardar</button>
+		<input id="guardar" type="submit" name="guardar" value="Guardar en disco">
+		<div>
+			<label>Ingrese un contraseña<input id="clave" type="password" name="clave"></label>
+		</div>
+	</form>
+	<script type="text/javascript">
+		document.getElementById('clave').addEventListener('keyup', e=>{
+			console.log(e.target.value)
+		})
+	</script>
+	<!--
+	<p>Esto es un párrafo
+			no es un salto de línea</p>
+	<hr>
+	<p>Esto es otro párrafo</p>
+	<pre>
+		Estamos aprendiendo html5
+			es entretenido aprender
+		si o no?
+	</pre>
+	<p>
+		Estamos aprendiendo html5
+			es entretenido aprender
+		si o no?
+	</p>
+	-->
+
+</body>
+</html>
